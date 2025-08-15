@@ -1,0 +1,9 @@
+services:
+  extractinator:
+    image: python:3.11-slim
+    container_name: extractinator
+    working_dir: /app
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
